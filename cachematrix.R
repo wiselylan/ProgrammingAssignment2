@@ -1,5 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## These two functions use a lazy initialization and cache scheme to 
+## provide the inverse matrix.
+
 
 ## This function creates a special "matrix" object that can cache its inverse.
 
@@ -31,7 +32,5 @@ cacheSolve <- function(x, ...) {
    data <- x$get()
    m <- solve(data, ...)
    x$setinverse(m)
-   m     
-   
-   ## Return a matrix that is the inverse of 'x'
+   m     ## Return a matrix that is the inverse of 'x'
 }
